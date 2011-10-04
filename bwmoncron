@@ -1,0 +1,6 @@
+* * * * * root /tmp/wrtbwmon setup br0
+*/30 0-3 * * * root /tmp/wrtbwmon update /tmp/usage.db peak
+*/30,59 4-8 * * * root /tmp/wrtbwmon update /tmp/usage.db offpeak
+*/30 9-23 * * * root /tmp/wrtbwmon update /tmp/usage.db peak
+45 * * * * root /tmp/wrtbwmon publish /tmp/usage.db /tmp/www/usage.htm
+32 * * * * root scp -i /tmp/root/.ssh/ssh_host_rsa_key /tmp/usage.db user@server:~/bw-monitor/
