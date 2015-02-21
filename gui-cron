@@ -1,1 +1,2 @@
+# Put this rule into your cron rules in the DD-WRT GUI
 * * * * * root [ ! -f /tmp/root/wrtbwmon ] && echo "outside_server open_ssh_public_key" > /tmp/root/.ssh/known_hosts && scp -i /tmp/root/.ssh/ssh_host_rsa_key user@outside_server:~/bw-monitor/restore.sh /tmp/root && chmod +x /tmp/root/restore.sh && /tmp/root/restore.sh

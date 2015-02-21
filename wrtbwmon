@@ -3,7 +3,7 @@
 # Traffic logging tool for OpenWRT-based routers
 #
 # Created by Emmanuel Brucy (e.brucy AT qut.edu.au)
-# Modifications by Krzysztof Rosset (k.rosset AT gmail.com)
+# Modifications by Chris Rosset (chris AT rosset.org.uk))
 #
 # Based on work from Fredrik Erlandsson (erlis AT linux.nu)
 # Based on traff_graph script by twist - http://wiki.openwrt.org/RrdTrafficWatch
